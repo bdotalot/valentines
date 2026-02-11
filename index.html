@@ -264,7 +264,7 @@
             <div class="message" id="successMessage">
                 <div class="success-message">
                     Yippee❗<br>
-                    <img src="dancing_cat.gif" width="360" height="500">><br>
+                    <img src="dancing_cat.gif" width="360" height="500"><br>
                     You're the best! 💖
                 </div>
             </div>
@@ -302,29 +302,36 @@
             "No 😿",
             "Are you sure? 🥺",
             "Really?? 😢",
-            "The cats are sad! 😿😿",
+            "Your gonna make me sad! 😿😿",
             "Think about it again? 🐱",
             "Pretty please! 🙏",
             "I don't believe you! 😤",
             "That doesn't count! 🙀",
             "Try again 😼",
-            "Here I am! 👀",
+            "Once last try 😤",
+            "Okay fine 🥺",
+            "Just kidding 😼",
             "Try catch me! 😹",
-            "You can't 😼",
+            "Here I am! 👀",
+            "You can't get me 😼",
             "Hehe! 🙈",
-            "NEVER! 🐱‍👤"
+            "JUST SAY YES! "
+            "Last chance ❗",
+            "You dont get a choice now 😤",
+            "❌ERROR❌"
         ];
         
         const funnyMessages = [
             "Hehe, that didn't work! 😸",
-            "Nice try! The cats won't let you! 🐱",
+            "Nice try! I won't let you! 🐱",
             "The button's too fast for you! 😹",
-            "Meow! It's not that easy! 😼",
-            "The cats have enchanted the button! ✨🐱",
+            "It's not that easy! 😼",
+            "The button must be magic! ✨🐱",
             "Are you giving up soon? 😻",
             "The YES button is much prettier! 💖",
-            "The cats want you to say YES! 🐱💕",
-            "This button has a mind of its own! 😹"
+            "It wants you to say YES! 🐱💕",
+            "This button has a mind of its own! 😹",
+            "You should just pick Yes 😼"
         ];
         
         function moveButton() {
@@ -336,7 +343,7 @@
             
             // Show escape count with funny message
             const msgIndex = (escapeAttempts - 1) % funnyMessages.length;
-            escapeCountEl.textContent = funnyMessages[msgIndex] + ` (Try: ${escapeAttempts})`;
+            escapeCountEl.textContent = funnyMessages[msgIndex]
             
             // Random transformations
             const transformations = [
