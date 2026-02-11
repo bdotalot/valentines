@@ -83,12 +83,6 @@
             50% { transform: scale(1.02); }
         }
         
-        .cat-container {
-            font-size: 80px;
-            margin-bottom: 20px;
-            animation: catBounce 1s ease-in-out infinite;
-        }
-        
         @keyframes catBounce {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
@@ -188,12 +182,6 @@
             50% { transform: rotate(5deg); }
         }
         
-        .cat-corner {
-            position: fixed;
-            font-size: 50px;
-            z-index: 2;
-        }
-        
         .cat-tl { top: 20px; left: 20px; animation: catWave 1s ease-in-out infinite; }
         .cat-tr { top: 20px; right: 20px; animation: catWave 1s ease-in-out infinite 0.2s; }
         .cat-bl { bottom: 20px; left: 20px; animation: catWave 1s ease-in-out infinite 0.4s; }
@@ -256,9 +244,6 @@
             .question {
                 font-size: 1.4rem;
             }
-            .cat-corner {
-                font-size: 30px;
-            }
         }
     </style>
 </head>
@@ -266,14 +251,8 @@
     <div class="floating-hearts" id="hearts"></div>
     <div class="confetti" id="confetti"></div>
     
-    <div class="cat-corner cat-tl">🐱</div>
-    <div class="cat-corner cat-tr">😺</div>
-    <div class="cat-corner cat-bl">😸</div>
-    <div class="cat-corner cat-br">😻</div>
-    
     <div class="container">
         <div class="card">
-            <div class="cat-container">😻💕🐱</div>
             <div class="name" id="name">Lucy</div>
             <div class="question" id="question">Will you be my Valentine? 💝</div>
             
