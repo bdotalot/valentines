@@ -334,11 +334,11 @@
                 () => { // Move to random position
                     const card = document.querySelector('.card');
                     const rect = card.getBoundingClientRect();
-                    const maxX = rect.width - noBtn.offsetWidth - 40;
-                    const maxY = 100;
+                    const maxX = rect.width - noBtn.offsetWidth;
+                    const maxY = rect.height - noBtn.offsetHeight;
                     noBtn.style.position = 'absolute';
                     noBtn.style.left = Math.random() * maxX + 'px';
-                    noBtn.style.top = (Math.random() * maxY + 50) + 'px';
+                    noBtn.style.top = Math.random() * maxY + 'px';
                 },
                 () => { // Shrink
                     const currentScale = parseFloat(noBtn.style.transform?.match(/scale\(([^)]+)\)/)?.[1] || 1);
