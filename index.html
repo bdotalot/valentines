@@ -177,22 +177,6 @@
             text-align: center;
         }
         
-        @keyframes catDance {
-            0%, 100% { transform: rotate(-5deg); }
-            50% { transform: rotate(5deg); }
-        }
-        
-        .cat-tl { top: 20px; left: 20px; animation: catWave 1s ease-in-out infinite; }
-        .cat-tr { top: 20px; right: 20px; animation: catWave 1s ease-in-out infinite 0.2s; }
-        .cat-bl { bottom: 20px; left: 20px; animation: catWave 1s ease-in-out infinite 0.4s; }
-        .cat-br { bottom: 20px; right: 20px; animation: catWave 1s ease-in-out infinite 0.6s; }
-        
-        @keyframes catWave {
-            0%, 100% { transform: rotate(0deg); }
-            25% { transform: rotate(10deg); }
-            75% { transform: rotate(-10deg); }
-        }
-        
         .escape-count {
             font-size: 0.9rem;
             color: #ff69b4;
@@ -276,8 +260,9 @@
     <script>
         // Get name from URL parameter
         const urlParams = new URLSearchParams(window.location.search);
-        const name = urlParams.get('name') || urlParams.get('Name') || 'Lucy';
+        const name = urlParams.get('name') || urlParams.get('Name') || 'Dear Lucy';
         document.getElementById('name').textContent = name;
+    
         
         // Create floating hearts
         const heartsContainer = document.getElementById('hearts');
